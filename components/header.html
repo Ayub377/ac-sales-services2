@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Header</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Adamina&family=Castoro&family=Crimson+Text&family=Jomolhari&family=Ledger&family=Lora&display=swap");
+
+    /* _________________________Common Start_________________________ */
+    body {
+      background-color: var(--white_smoke);
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #ffffff;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: orange;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: darkblue;
+    }
+
+
+
+    :root {
+      --dark_orange: #ee5007;
+      --dark_blue: #060047;
+      --blue_violet: #6a1fcb;
+      --white_smoke: #f5f6f7;
+      --jomolhari: font-family: "Jomolhari", serif;
+      --adamina: font-family: "Adamina", serif;
+      --ledger: font-family: "Ledger", serif;
+      --castoro: font-family: 'Castoro', serif;
+      --lora: font-family: 'Lora', serif;
+    }
+
+    * {
+      font-family: "Castoro", serif;
+    }
+
+    .title-style {
+      letter-spacing: 3px;
+      font-family: "Ledger", serif;
+      font-weight: 500;
+      font-size: 1.88em;
+      color: black;
+      text-transform: capitalize;
+    }
+
+    .sub-title-style {
+      font-family: "Adamina", serif;
+      font-weight: 500;
+      font-size: 1em;
+      color: black;
+      text-transform: capitalize;
+    }
+
+    .sub-title2-style {
+      font-family: "Lora", serif;
+      font-weight: 600;
+      text-align: justify;
+      font-size: .95em;
+      color: black;
+    }
+
+    .text-style {
+      font-family: "Castoro", serif;
+      font-weight: 500;
+      font-size: .88em;
+      color: black;
+    }
+
+    /* _________________________Common Start_________________________ */
+
+    /* _________________________Header Start_________________________ */
+    .header .navbar {
+      background-color: var(--white_smoke);
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+
+    .header .nav-link {
+      color: white;
+      text-transform: capitalize;
+      font-family: "Castoro", serif;
+      font-weight: 400;
+    }
+
+    .header .nav-item .nav-link {
+      border-bottom: 4px solid #232331 !important;
+    }
+
+    .header .nav-item:hover .nav-link,
+    .header .nav-link.active {
+      border-bottom: 4px solid var(--dark_orange) !important;
+      color: var(--dark_orange) !important;
+    }
+
+    .header input[type="search"] {
+      border: 1px solid var(--dark_orange);
+    }
+
+    .header input[type="search"]:focus {
+      box-shadow: none;
+      border: 1px solid var(--dark_blue);
+    }
+
+    .header input::placeholder {
+      color: var(--dark_orange) !important;
+      font-weight: 400;
+    }
+
+    .header input:focus::placeholder {
+      transition: all 0.5s ease;
+      color: var(--dark_blue) !important;
+      transform: translateX(10px);
+    }
+
+    .header .btn {
+      background-color: #ee5007;
+      font-family: var(--castoro);
+      font-size: 14px;
+    }
+
+    .header .btn:hover {
+      background-color: var(--blue_violet);
+    }
+
+    .header .dropdown-6 .dropdown-item {
+      background-color: var(--white_smoke);
+    }
+
+    .header .dropdown-6 .content-container {
+      box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+    }
+
+    .header .dropdown-6 .category-title {
+      background-color: var(--dark_blue);
+      box-shadow: 0px 2px 6px rgba(6, 0, 71, 0.5), 0px 0px 1px rgba(6, 0, 71, 0.5);
+    }
+
+    .header .dropdown-6 .content-container:hover .category-title {
+      background-color: var(--blue_violet);
+      box-shadow: 0px 2px 6px #6a1fcb4d, 0px 0px 1px #6a1fcb4d, 0px 4px 12px #1c1c1c7f;
+    }
+
+    .header .dropdown-6 .content-container:hover .category-title i,
+    .dropdown-6 .content-container:hover .category-title h6 {
+      color: var(--white_smoke) !important;
+    }
+
+
+
+
+
+
+
+
+
+    .header .upper i {
+      background-color: #ee5007;
+      transition: all .5s ease-in-out;
+    }
+
+    .header .upper:hover i {
+      background-color: #060047;
+      transform: rotateY(180deg);
+    }
+
+    .header .navbar {
+      background-color: #232331;
+    }
+
+    /* _________________________Header End_________________________ */
+
+    /* _________________________Footer End_________________________ */
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid p-0 overflow-hidden">
+    <div class="header">
+
+      <div class="row pb-3 pt-4">
+        <div class="col-sm-12 col-md-5">
+          <img src="../assets/images/logo.png" class="ms-4" alt="" style="width: auto; height: 50px;">
+        </div>
+        <div class="col-sm-12 col-md-7">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="upper">
+                <a href="http://google.map.com" class="text-decoration-none">
+                  <i class="bi bi-geo-alt float-start fs-2 rounded-circle text-center text-white me-2 pt-1" style="width: 50px; height: 50px;"></i>
+                </a>
+                <h6 class="fw-semibold pt-2" style="font-size: 14px;">666 Brooklyn Street</h6>
+                <h6 class="text-muted" style="font-size: 14px;">Visit Our Office</h6>
+              </div>
+            </div>
+            <div class="col">
+              <div class="upper">
+                <a href="mailto:help@yourdomain.com" class="text-decoration-none">
+                  <i class="bi bi-envelope-paper-fill float-start fs-3 rounded-circle text-center text-white me-2 pt-2" style="width: 50px; height: 50px;"></i>
+                </a>
+                <h6 class="fw-semibold pt-2" style="font-size: 14px;">help@yourdomain.com</h6>
+                <h6 class="text-muted" style="font-size: 14px;">Email Address</h6>
+              </div>
+            </div>
+            <div class="col">
+              <div class="upper">
+                <a href="tel:+8801789773767" class="text-decoration-none">
+                  <i class="bi bi-telephone-outbound-fill float-start fs-3 rounded-circle text-center text-white me-2 pt-2" style="width: 50px; height: 50px;"></i>
+                </a>
+                <h6 class="fw-semibold pt-2" style="font-size: 14px;">+880 1789 773767</h6>
+                <h6 class="text-muted" style="font-size: 14px;">Phone Line</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <nav class="navbar navbar-expand-lg sticky-top my-0 py-0">
+
+
+        <div class="container-fluid container-lg">
+          <!--  <a class="navbar-brand" href="./index.html">
+                        <img src="./images/nav-logo.png" class="img-fluid" alt="Boostuppanel logo" style="height: 50px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-between align-items-center w-100">
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./about_us2.html" target="_self">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./about_us2.html" target="_self">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./about_us2.html" target="_self">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./about_us2.html" target="_self">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./about_us2.html" target="_self">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./about_us2.html" target="_self">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./about_us2.html" target="_self">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="#" target="_self">Team</a>
+                </li>
+              </div>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <li class="nav-item">
+                  <a class="btn text-white border-0 rounded-5 px-5 py-2" href="#seo_audit" role="button">Get a Quote</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link py-4" href="./login.html" target="_self">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link py-4" href="./register.html" target="_self">Sign Up</a>
+                </li> -->
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+
+</html>

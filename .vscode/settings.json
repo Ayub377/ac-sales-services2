@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5504,
+    "html.format.wrapAttributes": "auto",
+    "html.format.wrapLineLength": 0,
+    "printWidth": 1000,
+    "prettier.printWidth": 1000,
+}
