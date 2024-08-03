@@ -177,6 +177,61 @@ body {
   background-color: #232331;
 }
 
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Merienda+One&display=swap");
+
+:root {
+  --theme-forground-color: #01ff38;
+  --theme-forground-color-2: #2400f1;
+  --theme-background-color: #ffd001;
+  --theme-background-color-2: #01eeff;
+}
+
+.dropdown-2 .img-height {
+  height: 150px;
+}
+
+.dropdown-2 .dropdown-menu {
+  background-color: #f5f6f7;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+  margin: auto !important;
+  left: 0;
+  right: 0;
+}
+
+.dropdown-2 .dropdown-item {
+  background-color: #f5f6f7;
+}
+
+.dropdown-2 .nav-link-bg {
+  background-color: #fbf4e9 !important;
+}
+
+.dropdown-2 .nav-link-bg:hover {
+  background-color: #e2e3f1 !important;
+}
+
+.dropdown-2 .card {
+  height: 165px;
+  background-color: #f5f6f7;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown-2 .card:hover {
+  box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3);
+}
+
+.dropdown-2 .card-img-top {
+  height: 130px;
+}
+
+.dropdown-2 .v-scroll {
+  overflow-y: auto;
+}
+
 /* _________________________Header End_________________________ */
 
 /* _________________________Footer End_________________________ */
@@ -335,6 +390,10 @@ body {
   transition: all 1s ease;
 }
 
+.team .card {
+  background-color: #f5f6f7;
+}
+
 .team .card:hover .box {
   border: 2px solid #ff5500;
 }
@@ -435,6 +494,11 @@ body {
   background-size: cover;
 }
 
+.project .project-container {
+  background-color: #f5f6f7;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+}
+
 .project .project-container img {
   transition: all 0.5s ease-in-out;
 }
@@ -450,12 +514,12 @@ body {
 
 .project .overlay-tag {
   position: absolute;
-  bottom: 17%;
+  bottom: 20%;
   transition: bottom 0.5s ease 0.5s;
 }
 
 .project .project-container:hover .overlay-tag {
-  bottom: 20%;
+  bottom: 23%;
   transition: bottom 0.5s ease 0s;
 }
 
@@ -499,7 +563,7 @@ body {
 
 .lightbox-3 .card {
   transition: transform 0.5s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
 }
 
 .lightbox-3 .card:hover {
@@ -553,7 +617,6 @@ body {
   background-color: #0f0b61;
   color: #f5f6f7;
 }
-
 /* Project Details End */
 
 /* FAQ Start */
@@ -807,6 +870,13 @@ body {
 }
 /* Service Details End */
 
+
+
+
+
+
+
+
 /* Products Start */
 .products .form-select {
   border: 1px solid #f5f6f7;
@@ -820,19 +890,47 @@ body {
 }
 
 .products .card {
+  background-color: #f5f6f7;
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
+}
+
+.products .card-body {
   background-color: #dfe4ea;
 }
 
-.products .card .overlay-icon {
+.products .card-image-top {
+  width: 250px;
+  height: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .products .card-image-top {
+    width: 100px;
+  }
+}
+
+.products .card:hover .font-image {
+  display: none !important;
+}
+
+.products .card:hover .back-image {
+  display: block !important;
+}
+
+.products .overlay-icon {
   position: absolute;
   opacity: 0;
-  bottom: 10%;
-  transition: bottom 1s ease-in-out;
+  bottom: 0;
+  transition: bottom 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .products .card:hover .overlay-icon {
   opacity: 1;
-  bottom: 23%;
+  bottom: 27%;
+}
+
+.products .card-body {
+  position: relative;
 }
 
 .products .social-media-icon {
@@ -847,6 +945,15 @@ body {
 /* Product End */
 
 /* Product Details Start */
+.product-details .btn-style {
+  background-color: #ee5007;
+  cursor: pointer;
+}
+
+.product-details .btn-style:hover {
+  background-color: #232331;
+}
+
 .product-details .description {
   background-color: #fbfbfb;
 }
