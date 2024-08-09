@@ -2,7 +2,7 @@
 
 /* _________________________Common Start_________________________ */
 :root {
-  --dark_orange: #ee5007;
+  --dark_orange: #ff5500;
   --light-dark: #0e2338;
   --blue_violet: #6a1fcb;
   --white_smoke: #f5f6f7;
@@ -571,11 +571,11 @@ footer a:hover span {
 
 /* Service Start */
 .service {
-  background-color: #f5f6f7;
+  background-color: var(--white_smoke);
 }
 
 .service .card {
-  background-color: #f5f6f7;
+  background-color: var(--white_smoke);
   box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
   transition: all 0.5s ease-in-out;
 }
@@ -592,13 +592,20 @@ footer a:hover span {
   transform: scale(1.08);
 }
 
-.service .btn {
-  background-color: #ff5500;
-  transition: all 0.5s ease;
+.service .card .card-title {
+  color: var(--light-dark);
 }
 
-.service .btn:hover {
-  background-color: #232331;
+.service .card .card-subtitle {
+  color: var(--dark_orange);
+}
+
+.service .icon-link i {
+  color: var(--dark_orange);
+}
+
+.service .icon-link:hover i {
+  color: var(--light-dark);
 }
 
 /* Service End */
@@ -606,6 +613,8 @@ footer a:hover span {
 /* Service Details Start */
 .service-details .service-list {
   width: 100%;
+  background-color: var(--white_smoke);
+  box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #dfe4ea;
 }
 
 .service-details .service-list .title,
@@ -614,27 +623,27 @@ footer a:hover span {
 }
 
 .service-details .service-list .title {
-  background-color: #f3f5f9;
+  background-color: var(--white_smoke);
   font-size: 17px;
   width: 83%;
 }
 
 .service-details .service-list:hover .title {
-  background-color: #ff5500;
-  color: white;
+  background-color: var(--dark_orange);
+  color: var(--white_smoke);
 }
 
 .service-details .service-list .icon {
-  background-color: #ff5500;
+  background-color: var(--dark_orange);
   width: 17%;
 }
 
 .service-details .service-list:hover .icon {
-  background-color: #232331;
+  background-color: var(--light-dark);
 }
 
 .service-details .contact-info {
-  background-color: #f3f5f9;
+  background-color: var(--white_smoke);
 }
 
 .service-details .contct-info .info {
@@ -643,7 +652,7 @@ footer a:hover span {
 
 .service-details .info .icon {
   width: 10%;
-  color: #ff5500;
+  color: var(--dark_orange);
 }
 
 .service-details .info .title {
@@ -651,7 +660,7 @@ footer a:hover span {
 }
 
 .service-details .quality {
-  background-color: #f3f5f9;
+  background-color: var(--white_smoke);
 }
 
 .service-details .quality:hover img {
@@ -659,7 +668,7 @@ footer a:hover span {
 }
 
 .service-details .quality:hover .card-title {
-  color: #ff5500;
+  color: var(--dark_orange);
 }
 
 .video-section {
@@ -683,7 +692,7 @@ footer a:hover span {
 }
 
 .pulse-play {
-  color: #ff5500;
+  color: var(--dark_orange);
   animation: pulse 2s infinite;
 }
 
