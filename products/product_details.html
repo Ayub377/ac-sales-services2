@@ -450,27 +450,27 @@
     </script>
 
 
-<script>
-    function decreaseValue() {
-      var input = document.getElementById("quantityInput");
-      var value = parseInt(input.value);
-      if (value > 1) {
-        value--;
-        input.value = value;
-      }
-      if (value === 1) {
-        document.querySelector(".bi-dash-lg").classList.add("disabled");
-      }
-    }
-  
-    function increaseValue() {
-      var input = document.getElementById("quantityInput");
-      var value = parseInt(input.value);
-      value++;
-      input.value = value;
-      document.querySelector(".bi-dash-lg").classList.remove("disabled");
-    }
-  </script>
+    <script>
+        function decreaseValue() {
+            var input = document.getElementById("quantityInput");
+            var value = parseInt(input.value);
+            if (value > 1) {
+                value--;
+                input.value = value;
+            }
+            if (value === 1) {
+                document.querySelector(".bi-dash-lg").classList.add("disabled");
+            }
+        }
+
+        function increaseValue() {
+            var input = document.getElementById("quantityInput");
+            var value = parseInt(input.value);
+            value++;
+            input.value = value;
+            document.querySelector(".bi-dash-lg").classList.remove("disabled");
+        }
+    </script>
 </body>
 
 </html>
